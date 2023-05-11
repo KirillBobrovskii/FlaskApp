@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" href="{{ url_for('static', filename='main_app/css/index.css') }}" rel="stylesheet">
+    <title>{{ data.title }}</title>
+</head>
+<body>
+    <div id="layout">
+        <h1>{{ data.title }}</h1>
+        {% for key, value in data.menu.items() %}
+            <a href="{{ value }}">{{ key }}</a>
+        {% endfor %}
+        {% block content %}
+            <h3>Автор: Бобровский Кирилл Александрович</h3>
+        {% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{% for category, msg in get_flashed_messages(True) %}
+    <div class="{{ category }}">{{ msg }}</div>
+{% endfor %}
+<form method="post">
+    <div>Логин <input name="login"></div>
+    <div>Пароль <input name="password"></div>
+    <div><input type="submit" value="{{ data.button }}"></div>
+</form>

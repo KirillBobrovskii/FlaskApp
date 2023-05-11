@@ -1,0 +1,7 @@
+{% extends 'main_app/index.html' %}
+
+{% block content %}
+    {% include 'main_app/form.html' %}
+    <div id="logup"><a href="{{ data.logup }}">Зарегистрироваться</a></div>
+    {{ super() }}
+{% endblock %}

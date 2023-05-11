@@ -1,0 +1,50 @@
+* {
+    font-family: 'Arial';
+}
+
+body {
+    background-color: #292929;
+}
+
+#layout {
+    width: 70%;
+    border: 5px solid #127515;
+    border-radius: 10px;
+    margin: 0 auto 0 auto;
+    padding: 10px;
+}
+
+h1, h3 {
+    color: #127515;
+}
+
+a {
+    color: #127515;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+form div {
+    color: #127515;
+    margin-top: 10px;
+}
+
+form div:last-child input {
+    cursor: pointer;
+    background-color: #127515;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#logup {
+    margin-top: 10px;
+}
+
+.error {
+    color: #ffffff;
+    background-color: #c43d3d;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px;
+}
